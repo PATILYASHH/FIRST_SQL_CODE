@@ -1,5 +1,6 @@
 entrypoint = "main.sql"
 run = "sqlite3 --init main.sql"
+modules = ["python-3.10"]
 
 [nix]
 channel = "stable-23_11"

@@ -1,18 +1,18 @@
--- First SQL code
-
-
-CREATE TABLE students (
-  ROLLNO INT PRIMARY KEY,
-  NAME VARCHAR(50),
-  DEGREE VARCHAR(10),
-  BIRTHYEAR INT
+CREATE TABLE sdata
+(
+  roll_no INT PRIMARY KEY,
+  name VARCHAR(30),
+  age INT,
+  city VARCHAR(10)
 );
 
-INSERT INTO students (ROLLNO, NAME, DEGREE,BIRTHYEAR)
-VALUES
-(1, 'Yash Patil', 'BCS',2006),
-(2, 'PARTH Magdum', 'CSE',2005),
-(3,'Vikky Patil','Uneducated',6969),
-(4,'Prathmesh Patil','Educated Unemploid',2002);
+INSERT INTO sdata
+(roll_no, name, age, city)
+VALUES 
+(1, 'YASH PATIL', 19, 'KOLHAPUR'),
+(2, 'VIKAS PATIL', 30, 'KOLHAPUR'),
+(3, 'PARTH MAGDUM', 17, 'KOLHAPUR'),
+(4, 'PRATHMESH PATL', 22, 'FULLEWADI');
 
-SELECT * FROM students;
+SELECT * FROM sdata
+WHERE roll_no = 4;
