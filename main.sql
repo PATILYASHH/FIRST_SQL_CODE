@@ -11,8 +11,9 @@ INSERT INTO sdata
 VALUES 
 (1, 'YASH PATIL', 19, 'KOLHAPUR'),
 (2, 'VIKAS PATIL', 30, 'KOLHAPUR'),
-(3, 'PARTH MAGDUM', 17, 'KOLHAPUR'),
+(3, 'PARTH MAGDUM', 17, 'MUMBAI'),
 (4, 'PRATHMESH PATL', 22, 'FULLEWADI');
 
-SELECT * FROM sdata
-WHERE roll_no = 4;
+SELECT city,name , COUNT(name)
+FROM sdata
+GROUP BY city,name;
